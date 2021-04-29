@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+#todo{
+  display: grid;
+  width: 100%;
+  height: 650px;
+  grid-template-areas: "header   header     header"
+                       "imagen   imagen     imagen"
+                       "nav        nav        nav"
+                       "izquierda  section  derecha"
+                       "izquierda   pie     pie"
+                       "footer    footer    footer";
+  grid-template-rows: 1fr 3fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  background-color: aqua;
+}
+  #todo > header {
+    grid-area: header;
+    background-color: #8ca0ff;
+    text-align: center;
+  }
+  
+  #imagen {
+    grid-area: imagen;
+    background-color: #ffa08c;
+    text-align: center;
+  }
+  
+  #todo > nav {
+    grid-area: nav;
+    background-color: #ffff64;
+    text-align: center;
+  }
+  
+  #izquierda {
+    grid-area: izquierda;
+    background-color: #04ff2d;
+    text-align: center;
+  }
+  #todo > section {
+    grid-area: section;
+    background-color: #f04eff;
+    text-align: center;
+  }
+  #derecha {
+    grid-area: derecha;
+    background-color: #8cffa0;
+    text-align: center;
+  }
+  #pie {
+    grid-area: pie;
+    background-color: #5d4df1;
+    text-align: center;
+  }
+  #todo > footer {
+    grid-area: footer;
+    background-color: #cf5530;
+    text-align: center;
+  }
